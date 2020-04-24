@@ -60,7 +60,6 @@ body {
     background-repeat: no-repeat;
     position: fixed;
     color: #fff !important;
-    border-radius: 50%;
 }
 
 #display {
@@ -228,7 +227,7 @@ body {
     min-height: 180px;
     max-width: 180px;
     max-height: 180px;
-    border-radius: 5px;
+    border-radius: 50%;
     background-size: cover !important;
     background-repeat: no-repeat !important;
 }
@@ -532,8 +531,8 @@ body {
     --bg-color: rgb(10, 10, 10);
     --text-color: #fff;
     --blog-gray-color: rgb(180, 180, 180);
-    --background-image: linear-gradient( 90deg, rgba(10, 10, 10, 0.3), rgb(10, 10, 10, 1)), url("https://images.unsplash.com/photo-1553748024-d1b27fb3f960?w=1500&q=80");
-    --background-background: linear-gradient( 0deg, rgba(10, 10, 10, 1), rgba(10, 10, 10, 0.6)), url("https://images.unsplash.com/photo-1553748024-d1b27fb3f960?w=1500&q=80") center center fixed;
+    --background-image: linear-gradient( 90deg, rgba(10, 10, 10, 0.3), rgb(10, 10, 10, 1)), url("splash.jpg");
+    --background-background: linear-gradient( 0deg, rgba(10, 10, 10, 1), rgba(10, 10, 10, 0.6)), url("splash.jpg") center center fixed;
     --height: 50vh;
 }
 
@@ -559,6 +558,6 @@ body {
 
 @media (max-width: 800px) {
      :root {
-        --background-image: linear-gradient( 0deg, rgba(10, 10, 10, 1), rgba(10, 10, 10, 0)), url("https://images.unsplash.com/photo-1553748024-d1b27fb3f960?w=1500&q=80") !important;
+        --background-image: linear-gradient( 0deg, rgba(10, 10, 10, 1), rgba(10, 10, 10, 0)), url("splash.jpg") !important;
     }
 }
