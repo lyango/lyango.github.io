@@ -239,8 +239,8 @@ body {
 
 #footer {
     width: 100%;
-    padding: 8vh 0px;
-    text-align: center;
+    padding: 2vh 0px;
+    text-align: right;
 }
 
 #footer a {
@@ -260,6 +260,9 @@ body {
     border-radius: 50%;
     background-size: cover !important;
     background-repeat: no-repeat !important;
+    position: relative;
+    top: -25%;
+    left: 20%;
 }
 
 #profile div {
@@ -270,6 +273,9 @@ body {
 #username {
     font-size: 18px;
     font-weight: bold;
+    position: relative;
+    top: -27%;
+    left: 32.5%;
 }
 
 #username span {
