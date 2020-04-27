@@ -71,10 +71,40 @@ body {
 }
 
 #display h1 {
+    font-size: 72px;
+    color: var(--text-color);
+    font-weight: bold;
+    font-family: "Questrial", sans;
+    border-left: .15em solid black;
+    margin: 0 auto;
+    animation: blink-caret .75s step-end infinite;
+}
+
+@keyframes blink-caret {
+    from,
+    to {
+        border-color: transparent
+    }
+    50% {
+        border-color: black
+    }
+}
+
+#display h2 {
     font-size: 50px;
     color: var(--text-color);
     font-weight: bold;
     font-family: "Questrial", sans-serif;
+    animation: move 3s;
+}
+
+@keyframes move {
+    from {
+        margin-left: -350px;
+    }
+    to {
+        margin-left: 0px;
+    }
 }
 
 .emoji {
@@ -221,12 +251,12 @@ body {
 }
 
 #profile_img {
-    width: 180px;
-    height: 180px;
-    min-width: 180px;
-    min-height: 180px;
-    max-width: 180px;
-    max-height: 180px;
+    width: 250px;
+    height: 250px;
+    min-width: 250px;
+    min-height: 250px;
+    max-width: 250px;
+    max-height: 250px;
     border-radius: 50%;
     background-size: cover !important;
     background-repeat: no-repeat !important;
@@ -528,36 +558,9 @@ body {
 }
 
 :root {
-    --bg-color: rgb(10, 10, 10);
-    --text-color: #fff;
-    --blog-gray-color: rgb(180, 180, 180);
-    --background-image: linear-gradient( 90deg, rgba(10, 10, 10, 0.3), rgb(10, 10, 10, 1)), url("splash.jpg");
-    --background-background: linear-gradient( 0deg, rgba(10, 10, 10, 1), rgba(10, 10, 10, 0.6)), url("splash.jpg") center center fixed;
-    --height: 50vh;
-}
-
-#display h1 {
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: #fff;
-}
-
-#blog-display h1 {
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: #fff;
-}
-
-.projects section {
-    background: rgb(20, 20, 20);
-}
-
-#blog_section section {
-    background: rgb(20, 20, 20);
-}
-
-@media (max-width: 800px) {
-     :root {
-        --background-image: linear-gradient( 0deg, rgba(10, 10, 10, 1), rgba(10, 10, 10, 0)), url("splash.jpg") !important;
-    }
+    --bg-color: rgb(235, 235, 235);
+    --text-color: rgb(10, 10, 10);
+    --blog-gray-color: rgb(80, 80, 80);
+    --background-image: linear-gradient( 90deg, rgba(10, 10, 10, 0.4), rgb(10, 10, 10, 0.4)), url("splash.png");
+    --background-background: #fff;
 }
