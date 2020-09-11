@@ -1,203 +1,142 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>leon yang</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/magic-grid/dist/magic-grid.min.js"></script>
-    <link rel="stylesheet" href="index.css">
-    <link rel="icon" href="portfolio_logo.png" type="image/png">
+	<title>leon yang.</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	<link rel="icon" href="/images/portfolio_logo.png" type="image/png">
 </head>
 
-<body>
-    <div id="loading">
-        <div id="spinner"></div>
-    </div>
-    <div id="profile">
-        <div id="profile_img" style="background: url(https://avatars0.githubusercontent.com/u/47435125?v=4) center;"></div>
-        <div id="username"><span style="display:block;">Leon Yang</span><a href="https://github.com/lyango">@lyango</a></div>
-        <div id="userbio" style="display: none;">undefined</div>
-        <div id="about">
-            <span style="display:none;"><i class="fas fa-users"></i> &nbsp; null</span>
-            <span style="display:none;"><i class="fas fa-envelope"></i> &nbsp; null</span>
-            <span style="display:none;"><i class="fas fa-link"></i> &nbsp; <a href=""></a></span>
-            <span style="display:none;"><i class="fas fa-map-marker-alt"></i> &nbsp;&nbsp; null</span>
-            <span style="display:none;"><i class="fas fa-user-tie"></i> &nbsp;&nbsp; Available for hire</span>
-            <div class="socials">
-                <span style="display:none !important;"><a href="https://www.twitter.com/undefined" target="_blank" class="socials"><i class="fab fa-twitter"></i></a></span>
-                <span style="display:none !important;"><a href="https://www.dribbble.com/undefined" target="_blank" class="socials"><i class="fab fa-dribbble"></i></a></span>
-                <span style="display:none !important;"><a href="https://www.linkedin.com/in/undefined/" target="_blank" class="socials"><i class="fab fa-linkedin-in"></i></a></span>
-                <span style="display:none !important;"><a href="https://www.medium.com/@undefined/" target="_blank" class="socials"><i class="fab fa-medium-m"></i></a></span>
-            </div>
-        </div>
-    </div>
-    <div id="display">
-        <div id=intro>
-            <h1>Hi! I'm Leon.</h1>
-        </div>
-        <div id=aboutme>
-            <p>I'm a Computer Science student at UC San Diego. My interests in the field that I most enjoy include both front-end and video game development!</p>
-        </div>
+<body class="is-preload">
+	<!-- Wrapper -->
+	<div id="wrapper">
 
-        <div id="education">
-            <h2>education</h2>
-        </div>
+		<!-- Header -->
+		<div id="inner">
+			<h6> </h6>
+		</div>
 
-        <div id="work">
-            <h2>projects</h2>
-            <div class="projects" id="work_section">
-                <a href="https://github.com/mattlawr/LibraryWalkTD" target="_blank">
-                    <section>
-                        <div class="section_title">LibraryWalkTD</div>
-                        <div class="about_section">
-                            <span style="display:block;">A tower defense game based on Library Walk. </span>
-                        </div>
-                        <div class="bottom_section">
-                            <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; C#</span>
-                            <span><i class="fas fa-star"></i>&nbsp; 5</span>
-                            <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
-                        </div>
-                    </section>
-                </a>
-                <a href="https://github.com/lyango/Discord-Bot" target="_blank">
-                    <section>
-                        <div class="section_title">Discord-Bot</div>
-                        <div class="about_section">
-                            <span style="display:block;">This bot connects to the giphy API to allow users in a Discord server to search, as well as includes server management for administrators.</span>
-                        </div>
-                        <div class="bottom_section">
-                            <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; JavaScript</span>
-                            <span><i class="fas fa-star"></i>&nbsp; 1</span>
-                            <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
-                        </div>
-                    </section>
-                </a>
-                <a href="https://github.com/lyango/Clink_App_Clone" target="_blank">
-                    <section>
-                        <div class="section_title">Clink_App_Clone</div>
-                        <div class="about_section">
-                            <span style="display:block;">Cloning of Clink App in collaboration with IEEE and Fall 2019 Team 13. This version removes any API keys utilized in Firebase for public view.</span>
-                        </div>
-                        <div class="bottom_section">
-                            <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; JavaScript</span>
-                            <span><i class="fas fa-star"></i>&nbsp; 1</span>
-                            <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
-                        </div>
-                    </section>
-                </a>
-                <a href="https://github.com/Alvinw9/Boomerman" target="_blank">
-                    <section>
-                        <div class="section_title">Boomerman</div>
-                        <div class="about_section">
-                            <span style="display:block;">A recreation of the classic Bomberman game - two player PvP on the same device</span>
-                        </div>
-                        <div class="bottom_section">
-                            <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; C#</span>
-                            <span><i class="fas fa-star"></i>&nbsp; 3</span>
-                            <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
-                        </div>
-                    </section>
-                </a>
-                <a href="https://github.com/lyango/lyango.github.io" target="_blank">
-                    <section>
-                        <div class="section_title">lyango.github.io</div>
-                        <div class="about_section">
-                            <span style="display:none;">undefined</span>
-                        </div>
-                        <div class="bottom_section">
-                            <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; CSS</span>
-                            <span><i class="fas fa-star"></i>&nbsp; 0</span>
-                            <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
-                        </div>
-                    </section>
-                </a>
-            </div>
-        </div>
-        <div id="forks" style="display:none;">
-            <h1>Forks.</h1>
-            <div class="projects" id="forks_section"></div>
-        </div>
-        <div id="blog_section">
-            <h1>Blog.</h1>
-            <div id="blogs"></div>
-        </div>
-        <div id="footer">
-            <a>Image created by </a>
-            <a href="https://www.artstation.com/sergddd">Sergey Kuydin</a>
-            <div>
-                <a>Template inspired by </a>
-                <a href="https://github.com/imfunniee">imfunniee</a>
-            </div>
-        </div>
-    </div>
-    <script type="text/javascript">
-        setTimeout(function() {
-            document.getElementById("loading").classList.add("animated");
-            document.getElementById("loading").classList.add("fadeOut");
-            setTimeout(function() {
-                document.getElementById("loading").classList.remove("animated");
-                document.getElementById("loading").classList.remove("fadeOut");
-                document.getElementById("loading").style.display = "none";
-            }, 800);
-        }, 1500);
-        $.getJSON("blog.json", function(blog) {
-            blog = blog || [];
-            if (blog.length == 0) {
-                return (document.getElementById("blog_section").style.display =
-                    "none");
-            }
-            for (var i = 0; i < blog.length; i++) {
-                $("#blogs").append(`
-            <a href="./blog/${blog[i].url_title}/" target="_blank">
-                <section>
-                    <img src="./blog/${blog[i].url_title}/${blog[i].top_image}">
-                    <div class="blog_container">
-                        <div class="section_title">${blog[i].title}</div>
-                        <div class="about_section">
-                            ${blog[i].sub_title}
-                        </div>
-                    </div>
-                </section>
-            </a>
-            `);
-            }
-        }).fail(function() {
-            return (document.getElementById("blog_section").style.display = "none");
-        });
-    </script>
+		<!-- Main -->
+		<div id="main">
+			<div class="inner">
+				<!-- title -->
+				<header>
+					<p id="intro"><b>import</b> coffee;</p>
+					<p id="intro"><i>// some code</i></p>
+					<p id="intro">if(portfolio) intro();</p>
+					<h1>Hi! I'm Leon, <span class="typed-text"></span><span class="cursor">&nbsp</span> </h1>
+					<ul class="icons">
+						<li><a href="https://www.linkedin.com/in/lyango/" class="icon brands style2 fa-linkedin"><span class="label">Linkedin</span></a></li>
+						<li><a href="https://github.com/lyango" class="icon brands style2 fa-github"><span class="label">Github</span></a></li>
+						<li><a href="mailto:ley015@ucsd.edu" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
+						<li><a href="/Resume_LeonYang.pdf" class="button primary">Resume</a></li>
+					</ul>
+					<script src="/assets/js/type.js"></script>
+				</header>
 
-    <script>
-        const magicProjectsGrid = new MagicGrid({
-            container: "#work_section",
-            animate: false,
-            gutter: 30, // default gutter size
-            static: true,
-            useMin: false,
-            maxColumns: 2,
-            useTransform: true
-        });
+				<!-- about -->
+				<hr />
+				<h2>> about me...</h2>
+				<p>Hello! I'm Leon, an aspiring software engineer, and current Computer Science student at <a
+						href="https://ucsd.edu/">UC San Diego</a>. I enjoy developing web based,
+					and general application software, as well as video game development. Ultimately, I have great
+					interest in creating meaningful software that users can find entertaining and,
+					or useful.</p>
+				<p>Here are some of the technologies I have experience in: </p>
+				<ul class="icons">
+					<li><b>Javascript</b></li>
+					<li><b>React.js</b></li>
+					<li><b>Node.js</b></li>
+					<li><b>Express.js</b></li>
+					<li><b>HTML / CSS</b></li>
+					<li><b>Java</b></li>
+					<li><b>C</b></li>
+					<li><b>C#</b></li>
+					<li><b>C++</b></li>
+					<li><b></b></li>
+					<li><b>Unity Game Engine</b></li>
+				</ul>
+				<hr/>
 
-        const magicForksGrid = new MagicGrid({
-            container: "#forks_section",
-            animate: false,
-            gutter: 30, // default gutter size
-            static: true,
-            useMin: false,
-            maxColumns: 2,
-            useTransform: true
-        });
+				<!-- projects -->
+				<div id="main">
+					<div class="inner">
+						<h2>> projects...</h2>
+						<p>Here are some of my projects below. Click to see more details! </p>
+						<section class="tiles">
+							<!-- TSP -->
+							<article class="style1">
+								<span class="image">
+									<img src="images/TSP.png" alt="" />
+								</span>
+								<a href="tsp.html">
+									<h2>The Social Plate</h2>
+									<div class="content">
+										<p>Web application that aims to make learning how to cook more simple, and
+											social, while gamifying user progress.</p>
+									</div>
+								</a>
+							</article>
+							<!-- Boom Bot -->
+							<article class="style1">
+								<span class="image">
+									<img src="images/boombot.png" alt="" />
+								</span>
+								<a href="boombot.html">
+									<h2>Boom Bot</h2>
+									<div class="content">
+										<p>Information based bot developed for Discord users for Riot Games' Valorant
+											players. The bot actively takes data from the official Valorant website, and
+											will concurrently and automatically update based off Riot Games.</p>
+									</div>
+								</a>
+							</article>
+							<!-- Portfolio Website -->
+							<article class="style1">
+								<span class="image">
+									<img src="images/portfolio_website.png" alt="" />
+								</span>
+								<a href="portfolio.html">
+									<h2>Portfolio Website</h2>
+									<div class="content">
+										<p>Personal portfolio website coded based off template. Developed custom
+											CSS and HTML code to desired layout.</p>
+									</div>
+								</a>
+							</article>
+						</section>
+					</div>
+				</div>
+			</div>
+		</div>
 
-        $("document").ready(() => {
-            magicProjectsGrid.listen();
-            magicForksGrid.listen();
-        });
-    </script>
+		<!-- Footer -->
+		<footer id="footer">
+			<div class="inner">
+				<ul class="copyright">
+					<li>Made by Leon Yang</li>
+					<li>Design based off <a href="http://html5up.net">HTML5 UP</a></li>
+				</ul>
+			</div>
+		</footer>
 
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
 
 </body>
 
