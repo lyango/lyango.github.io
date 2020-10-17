@@ -1,70 +1,69 @@
-<!DOCTYPE html>
-<html lang="en-us">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | Bwak To Work</title>
-    <link rel="shortcut icon" href="TemplateData/favicon.ico">
-    <link rel="stylesheet" href="TemplateData/style.css">
-  </head>
-  <body>
-    <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas"></canvas>
-      <div id="unity-loading-bar">
-        <div id="unity-logo"></div>
-        <div id="unity-progress-bar-empty">
-          <div id="unity-progress-bar-full"></div>
-        </div>
-      </div>
-      <div id="unity-footer">
-        <div id="unity-webgl-logo"></div>
-        <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">Bwak To Work</div>
-      </div>
-    </div>
-    <script>
-      var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/WebGL Build.loader.js";
-      var config = {
-        dataUrl: buildUrl + "/WebGL Build.data",
-        frameworkUrl: buildUrl + "/WebGL Build.framework.js",
-        codeUrl: buildUrl + "/WebGL Build.wasm",
-        streamingAssetsUrl: "StreamingAssets",
-        companyName: "Leon Yang",
-        productName: "Bwak To Work",
-        productVersion: "1.0",
-      };
+<!DOCTYPE HTML>
+<html>
 
-      var container = document.querySelector("#unity-container");
-      var canvas = document.querySelector("#unity-canvas");
-      var loadingBar = document.querySelector("#unity-loading-bar");
-      var progressBarFull = document.querySelector("#unity-progress-bar-full");
-      var fullscreenButton = document.querySelector("#unity-fullscreen-button");
+<head>
+	<title>leon yang.</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	<link rel="icon" href="/images/portfolio_logo.png" type="image/png">
+</head>
 
-      if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
-        container.className = "unity-mobile";
-        config.devicePixelRatio = 1;
-      } else {
-        canvas.style.width = "960px";
-        canvas.style.height = "600px";
-      }
-      loadingBar.style.display = "block";
+<body class="is-preload">
+	<!-- Wrapper -->
+	<div id="wrapper">
 
-      var script = document.createElement("script");
-      script.src = loaderUrl;
-      script.onload = () => {
-        createUnityInstance(canvas, config, (progress) => {
-          progressBarFull.style.width = 100 * progress + "%";
-        }).then((unityInstance) => {
-          loadingBar.style.display = "none";
-          fullscreenButton.onclick = () => {
-            unityInstance.SetFullscreen(1);
-          };
-        }).catch((message) => {
-          alert(message);
-        });
-      };
-      document.body.appendChild(script);
-    </script>
-  </body>
+		<!-- Header -->
+		<header id="project-header">
+		</header>
+
+		<!-- Main -->
+		<div id="main">
+			<div class="inner">
+				<a href="/" class="button default">HOME</a>
+				<h2 id="project-title">> <u>Project</u>: Bawk To Work<span class="cursor">&nbsp</span></h2>
+				
+				<span class="image main">
+					<img src="images/btw_preview.png" alt="" width=550px/>
+				</span>
+				<p><b>Bawk To Work</b> is a solo project developed in Unity Game Engine. Help the chicken get back to work by collecting coffee, and 
+				powerups to increase the score. The player naturally accumulates points over time, but the game will increase in speed the further 
+				you get!
+				<p>This game is an endless runner that incorporates randomly generated platforms, as well as randomly generated points and powerups 
+				that the player can collect. This was done by creating a point of reference in tandem with game camera; once objects are off the camera, 
+				then objects are disabled to generate new objects for the player. Utilizing the <b>object pool pattern</b> design pattern, I was able to 
+				do this. Through this pattern, memory was saved by reusing the platforms, points, and powerups as a pool of initialized objects.</p>
+                <p><b>Game design</b>, and <b>programming</b> were all done by me through Unity and C#. Some <b>art</b> was also created by me 
+                by using pixel art programs. Most of the <b>art</b> was done by <a href="https://pixelfrog-store.itch.io/">Pixel Frog</a>, with
+                <b>music</b> by <a href="http://nathanclearymusic.co.uk/">Nathan Cleary Music</a>.</p>
+                <br>
+                <p><b>You can play the game here!</b></p>
+                    <a href="https://lyango.github.io/btwgame.html" class="button primary">See Project</a>
+                    <div id="tsp-spacing"></div>
+			</div>
+		</div>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<div class="inner">
+				<ul class="copyright">
+					<li>Made by Leon Yang</li>
+					<li>Design based off <a href="http://html5up.net">HTML5 UP</a></li>
+				</ul>
+			</div>
+		</footer>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+
 </html>
