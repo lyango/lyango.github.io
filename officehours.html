@@ -1,73 +1,73 @@
 <!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP | Modified by Leon Yang
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
 <html>
-
-<head>
-	<title>leon yang.</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<link rel="stylesheet" href="assets/css/main.css" />
-	<noscript>
-		<link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	<link rel="icon" href="/images/portfolio_logo.png" type="image/png">
-</head>
-
-<body class="is-preload">
-	<!-- Wrapper -->
-	<div id="wrapper">
+	<head>
+		<title>leon yang.</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="icon" href="/images/portfolio_logo.png" type="image/png">
+	</head>
+	<body class="is-preload">
 
 		<!-- Header -->
-		<header id="project-header">
-		</header>
+        <header id="header" style="background-color: #1f1f1f;">
+            <nav>
+                <ul style="text-align: center;">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html" class="active">Projects</a></li>
+                    <li><a href="LeonYang_Resume.pdf">Resume</a></li>
+                </ul>
+            </nav>
+        </header>
 
-		<!-- Main -->
-		<div id="main">
-			<div class="inner">
-				<a href="/" class="button default">HOME</a>
-				<h2 id="project-title">> <u>Project</u>: Office Hours<span class="cursor">&nbsp</span></h2>
+		<!-- Wrapper -->
+			<div id="wrapper">
 
-				<span class="image main">
-					<img src="images/officehours2.png" alt="" width=550px />
-				</span>
-				<p>Inspired by visuals of games in Playstation 1 era, <b>Office Hours</b> was developed for <a
-						href="https://itch.io/jam/scream-jam-2020">Scream Jam 2020</a> on <a
-						href="https://itch.io/">itch.io</a> in
-					<b>10 days</b> with a dedicated team. Maintain your sanity while trying to escape the horrors of the
-					office by closing your eyes, and not looking at anything that might want
-					to get you!
-				<p>Utilizing <b>C#</b> and <b>Unity Game Engine</b>, I developed the monster AI, the player's sanity
-					system, as well as other components of the game. The AI was created based off
-					a <b>finite state machine</b> that encompassed 3 primary states of patrolling, hunting, and
-					searching. The patrolling was created based off predetermined nodes, similar to
-					a <b>cyclic directed graph</b> that has directed edges to the next node, or destination. By
-					utilizing Unity's <b>NavMesh, or Navigation Mesh</b> render meshes, the AI was able
-					to pathfind and traverse the level freely, while avoiding any obstacles that would block its path.
-					All art assets were created in <b>Blender</b>, and imported into Unity.</p>
-				<br>
-				<p><b>You can play the game here!</b></p><a href="https://viridian01.itch.io/office-hours"
-					class="button primary">See Project</a>
-				<div id="tsp-spacing"></div>
+				<!-- Main -->
+					<section id="main" class="wrapper">
+						<div class="inner">
+							<h1 class="major">Project: Office Hours</h1>
+                            <span class="image fit"><img src="images/officehours2.png" alt="oh"/></span>
+							<p>Inspired by visuals of games in Playstation 1 era, <b>Office Hours</b> was developed for Scream Jam 2020 on itch.io in <b>10 days</b> with a team composed of VGDC members. 
+								Maintain your sanity while trying to escape the horrors of the office by closing your eyes, and not looking at anything that might want to get you!</p>
+							<p>Utilizing <b>C#</b> and <b>Unity Game Engine</b>, I developed the monster AI, the player's sanity system, as well as other components of the game. The AI was created 
+								based off a <b>finite state machine</b> that encompassed 3 primary states of patrolling, hunting, and searching. The patrolling was created based off predetermined nodes, 
+								similar to a <b>cyclic directed graph</b> that has directed edges to the next node, or destination. By utilizing Unity's <b>NavMesh, or Navigation Mesh</b> render meshes, 
+								the AI was able to pathfind and traverse the level freely, while avoiding any obstacles that would block its path. All art assets were created in <b>Blender</b>, and 
+								imported into Unity.</p>
+							<button onclick="window.location.href='https://viridian01.itch.io/office-hours'">See Project</button>
+						</div>
+					</section>
+
 			</div>
-		</div>
 
 		<!-- Footer -->
-		<footer id="footer">
-			<div class="inner">
-				<ul class="copyright">
-					<li>Made by Leon Yang</li>
-					<li>Design based off <a href="http://html5up.net">HTML5 UP</a></li>
-				</ul>
-			</div>
-		</footer>
+        <footer id="footer" class="wrapper alt" style="background-color: #1a1a1a;">
+            <div class="inner">
+                <ul class="menu">
+                    <li style="color: white;">Leon Yang</li>
+                    <li style="color: white;"><a href="http://html5up.net">HTML5 UP</a></li>
+                    <li style="color: white;"><a href="https://www.linkedin.com/in/lyango/" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+                    <li style="color: white;"><a href="https://github.com/lyango" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+                    <li style="color: white;"><a href="mailto:ley015@ucsd.edu" class="icon solid style2 fa-envelope"><span class="label">GitHub</span></a></li>
+                </ul>
+            </div>
+        </footer>
 
-	</div>
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
 
-	<!-- Scripts -->
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/browser.min.js"></script>
-	<script src="assets/js/breakpoints.min.js"></script>
-	<script src="assets/js/util.js"></script>
-	<script src="assets/js/main.js"></script>
-
-</body>
-
+	</body>
 </html>
